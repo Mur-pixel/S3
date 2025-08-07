@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DOCKER_IMAGE: ghcr.io/${{ github.actor }}/react-s3-experiment:latest
+  DOCKER_IMAGE: ghcr.io/mur-pixel/react-s3-experiment:latest
 
 jobs:
   build:
