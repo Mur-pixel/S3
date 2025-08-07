@@ -22,7 +22,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # 커스텀 nginx 설정을 사용하기 위해 docker 폴더 하위의 nginx를 실제로 Docker Container가 구동하는 nignx 설정 파일로 복사함
-COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # 그리고 nginx가 빌드한 결과를 구동하도록
 # 빌드된 /app/dist 내용을 nginx가 구동할 /usr/share/nginx/html로 복사함
